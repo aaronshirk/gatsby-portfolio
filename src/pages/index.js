@@ -51,16 +51,16 @@ export default function Home() {
 
       {/* ***  PROJECTS / PORTFOLIO *** */}
       <section>
-        <div className="text-left md:text-center">
+        <div>
           <h3 className="text-3xl pt-2">Featured Projects</h3>
           <p className="text-md py-3 text-gray-700">
             View selected projects below. More information can be found at{" "}
             <a href="https://aaronshirk.github.io">aaronshirk.github.io</a>.
           </p>
 
-          {/* Project 1 */}
-          <div>
-            <div className="bg-zinc-50 text-center shadow-xl p-10 rounded-xl my-10 max-w-sm">
+          <div className="md:flex gap-10">
+            {/* Project 1 */}
+            <div className="bg-zinc-50 text-center shadow-xl p-10 rounded-xl my-10 w-96 h-96">
               <StaticImage
                 src="../images/andoid-apps-ratings.jpg"
                 alt="Android app rating distribution"
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-zinc-50 text-center shadow-xl p-10 rounded-xl my-10 max-w-sm">
+            <div className="bg-zinc-50 text-center shadow-xl p-10 rounded-xl my-10 w-96 h-96">
               <StaticImage
                 src="../images/netflix-movies.jpg"
                 alt="Investigating netflix movie length"
@@ -93,9 +93,8 @@ export default function Home() {
                 Investigating Netflix Movies and Guest Stars in The Office
               </h3>
               <p className="text-md text-gray-700 mb-5">
-                From Netflix movies data, can we determine that the average
-                movie duration has been decreasing steadily over the last
-                decade?
+                Is it true that movie duration has steadily decreased over the
+                last few years?
               </p>
               <a
                 className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600"
