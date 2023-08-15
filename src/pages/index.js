@@ -52,26 +52,29 @@ export default function Home() {
       {/* ***  PROJECTS / PORTFOLIO *** */}
       <section>
         <div>
-          <h3 className="text-3xl pt-2">Featured Projects</h3>
-          <p className="text-md py-3 text-gray-700">
+          <h3 className="text-3xl pt-2 text-left md:text-center">
+            Featured Projects
+          </h3>
+          <p className="text-md py-3 text-gray-700 text-left md:text-center">
             View selected projects below. More information can be found at{" "}
             <a href="https://aaronshirk.github.io">aaronshirk.github.io</a>.
           </p>
 
           <div className="md:flex gap-10">
             {/* Project 1 */}
-            <div className="bg-zinc-50 text-center shadow-xl p-10 rounded-xl my-10 w-96 h-96">
+            <div className="text-center shadow-xl rounded-xl my-10 w-96 h-96">
               <StaticImage
                 src="../images/andoid-apps-ratings.jpg"
                 alt="Android app rating distribution"
-                className="w-5/6"
+                height={200}
+                aspectRatio={2.44}
               />
-              <h3 className="text-lg font-medium pt-8 pb-2">
+              <h3 className="text-lg font-medium mt-6 mb-3 mx-2 md:mx-4">
                 The Android App Market on Google Play (Jupyter Notebook)
               </h3>
-              <p className="text-md text-gray-700 mb-5">
-                Comprehensive analysis of the Android app market, comparing over
-                ten thousand apps in Google Play across different categories
+              <p className="text-md text-gray-700 mb-6 mx-2 md:mx-4">
+                Comprehensive analysis of the Android app market; Source: Google
+                Play
               </p>
               <a
                 className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 hover:pointer"
@@ -83,16 +86,17 @@ export default function Home() {
             </div>
 
             {/* Project 2 */}
-            <div className="bg-zinc-50 text-center shadow-xl p-10 rounded-xl my-10 w-96 h-96">
+            <div className="text-center shadow-xl rounded-xl my-10 w-96 h-96">
               <StaticImage
                 src="../images/netflix-movies.jpg"
                 alt="Investigating netflix movie length"
-                className="w-5/6"
+                height={200}
+                aspectRatio={2.44}
               />
-              <h3 className="text-lg font-medium pt-8 pb-2">
+              <h3 className="text-lg font-medium mt-6 mb-3 mx-2 md:mx-4">
                 Investigating Netflix Movies and Guest Stars in The Office
               </h3>
-              <p className="text-md text-gray-700 mb-5">
+              <p className="text-md text-gray-700 mb-6 mx-2 md:mx-4">
                 Is it true that movie duration has steadily decreased over the
                 last few years?
               </p>
