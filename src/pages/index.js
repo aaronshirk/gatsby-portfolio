@@ -132,71 +132,82 @@ export default function Home() {
 
           {/* Job 1 */}
           <section>
-            <div className="mb-5">
-              <h3 className="text-lg leading-6 font-semibold mt-6">
-                Senior Analytics Engineer
-              </h3>
-              <p className="italic leading-6 text-md text-gray-700">
-                Premier Inc.
-              </p>
-              <p className="text-md leading-6 text-gray-700">
-                Apr 22 - Present
-              </p>
-            </div>
-            <div className="mb-5">
-              <p className="text-md text-gray-700 mb-5">
-                Build data analytics reports, data pipelines
-              </p>
-              <p className="text-md text-gray-700 mb-2">Skills:</p>
-              <ul className="list-disc list-inside">
-                <li>React.js</li>
-                <li>Typescript</li>
-                <li>PostgreSQL</li>
-                <li>Apache Airflow</li>
-                <li>Software Development</li>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>Pandas</li>
-              </ul>
+            <div className="my-8 flex flex-col md:flex-row md:justify-center">
+              <div className="pb-5 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
+                <h3 className="text-lg leading-6 font-semibold">
+                  Senior Analytics Engineer
+                </h3>
+                <p className="italic leading-6 text-md text-gray-700">
+                  Premier Inc.
+                </p>
+                <p className="text-md leading-6 text-gray-700">
+                  Oct 21 - Apr 22
+                </p>
+              </div>
+              <div className="pb-5 border-b border-dashed border-b-gray-600 md:px-3">
+                <p className="text-md text-gray-700 mb-5">
+                  Build data analytics reports, data pipelines
+                </p>
+                <p className="text-md text-gray-700 mb-2">Skills:</p>
+                <ul className="list-disc list-inside">
+                  <li>React.js</li>
+                  <li>Typescript</li>
+                  <li>PostgreSQL</li>
+                  <li>Apache Airflow</li>
+                  <li>Software Development</li>
+                  <li>SQL</li>
+                  <li>Python</li>
+                  <li>Pandas</li>
+                </ul>
+              </div>
             </div>
           </section>
 
           {/* Job 2 */}
           <section>
-            <div>
-              <h3>Senior Software Developer</h3>
-              <p>North Wind Group</p>
-              <p>Oct 21 - Apr 22</p>
-            </div>
-            <div>
-              <p>
-                Served as lead software developer to help establish modern
-                software development practices
-              </p>
-              <ul>
-                <li>
-                  Lead the development team towards modern application
-                  development using ReactJS, ASP.NET Core, Sql Server as the
-                  primary development stack and Azure and Azure DevOps for
-                  managed cloud services
-                </li>
-                <li>
-                  Develop and maintain corporate applications utilized by all
-                  subsidiary businesses; example applications include Vaccine
-                  Status System, Lease Application, Total Compensation, and
-                  Purchase Requisition
-                </li>
-                <li>
-                  Establish, promote, and train on standard development
-                  practices, process, and coding standards based on Agile and
-                  modern development workflows (i.e. git/github
-                </li>
-                <li>GitFlow, dev build/deploy pipelines)</li>
-                <li>
-                  Maintain corporate legacy applications in Drupal/Ubuntu, MS
-                  SharePoint, ASP.NET MVC
-                </li>
-              </ul>
+            <div className="my-8 flex flex-col md:flex-row md:justify-center">
+              <div className="pb-5 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
+                <h3 className="text-lg leading-6 font-semibold">
+                  Senior Software Developer
+                </h3>
+                <p className="italic leading-6 text-md text-gray-700">
+                  North Wind Group
+                </p>
+                <p className="text-md leading-6 text-gray-700">
+                  Apr 22 - Present
+                </p>
+              </div>
+              <div className="pb-5 border-b border-dashed border-b-gray-600 md:px-3">
+                <p className="text-md text-gray-700 mb-5">
+                  Worked as lead software developer helping to establish modern
+                  software development practices
+                </p>
+                <p className="text-md text-gray-700 mb-2">Responsibilities:</p>
+                <ul className="list-disc list-inside">
+                  <li>
+                    Lead the development team towards modern application
+                    development using ReactJS, ASP.NET Core, Sql Server as the
+                    primary development stack and Azure and Azure DevOps for
+                    managed cloud services
+                  </li>
+                  <li>
+                    {" "}
+                    Develop and maintain corporate applications utilized by all
+                    subsidiary businesses; example applications include Vaccine
+                    Status System, Lease Application, Total Compensation, and
+                    Purchase Requisition
+                  </li>
+                  <li>
+                    Establish, promote, and train on standard development
+                    practices, process, and coding standards based on Agile and
+                    modern development workflows (i.e. git/github
+                  </li>
+                  <li>
+                    Maintain corporate legacy applications in Drupal/Ubuntu, MS
+                    SharePoint, ASP.NET MVC
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
