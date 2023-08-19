@@ -133,7 +133,7 @@ export default function Home() {
           {/* Job 1 */}
           <section>
             <div className="my-8 flex flex-col md:flex-row md:justify-center">
-              <div className="pb-5 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
+              <div className="pb-5 md:basis-1/4 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
                 <h3 className="text-lg leading-6 font-semibold">
                   Senior Analytics Engineer
                 </h3>
@@ -144,7 +144,7 @@ export default function Home() {
                   Oct 21 - Apr 22
                 </p>
               </div>
-              <div className="pb-5 border-b border-dashed border-b-gray-600 md:px-3">
+              <div className="pb-5 border-b border-dashed border-b-gray-600 md:basis-3/4 md:px-3">
                 <p className="text-md text-gray-700 mb-5">
                   Build data analytics reports, data pipelines
                 </p>
@@ -166,7 +166,7 @@ export default function Home() {
           {/* Job 2 */}
           <section>
             <div className="my-8 flex flex-col md:flex-row md:justify-center">
-              <div className="pb-5 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
+              <div className="pb-5 md:basis-1/4 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
                 <h3 className="text-lg leading-6 font-semibold">
                   Senior Software Developer
                 </h3>
@@ -177,7 +177,7 @@ export default function Home() {
                   Apr 22 - Present
                 </p>
               </div>
-              <div className="pb-5 border-b border-dashed border-b-gray-600 md:px-3">
+              <div className="pb-5 border-b border-dashed border-b-gray-600 md:basis-3/4 md:px-3">
                 <p className="text-md text-gray-700 mb-5">
                   Worked as lead software developer helping to establish modern
                   software development practices
@@ -185,27 +185,46 @@ export default function Home() {
                 <p className="text-md text-gray-700 mb-2">Responsibilities:</p>
                 <ul className="list-disc list-inside">
                   <li>
-                    Lead the development team towards modern application
-                    development using ReactJS, ASP.NET Core, Sql Server as the
-                    primary development stack and Azure and Azure DevOps for
-                    managed cloud services
+                    Dev stack: ReactJS, ASP.NET Core, Sql Server, git/github
                   </li>
+                  <li>Cloud: Azure App Services & Azure DevOps</li>
+                  <li>Teach and promote modern application development</li>
+                  <li> Maintain existing corporate applications</li>
                   <li>
-                    {" "}
-                    Develop and maintain corporate applications utilized by all
-                    subsidiary businesses; example applications include Vaccine
-                    Status System, Lease Application, Total Compensation, and
-                    Purchase Requisition
+                    Establish and train standard development practices (Agile)
                   </li>
-                  <li>
-                    Establish, promote, and train on standard development
-                    practices, process, and coding standards based on Agile and
-                    modern development workflows (i.e. git/github
-                  </li>
-                  <li>
-                    Maintain corporate legacy applications in Drupal/Ubuntu, MS
-                    SharePoint, ASP.NET MVC
-                  </li>
+                  <li>Maintain corporate legacy applications</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Job 3 */}
+          <section>
+            <div className="my-8 flex flex-col md:flex-row md:justify-center">
+              <div className="pb-5 md:basis-1/4 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
+                <h3 className="text-lg leading-6 font-semibold">
+                  Full Stack Developer (Contract and Full-Time)
+                </h3>
+                <p className="italic leading-6 text-md text-gray-700">PWC</p>
+                <p className="text-md leading-6 text-gray-700">
+                  Aug 20 - Sep 21
+                </p>
+              </div>
+              <div className="pb-5 border-b border-dashed border-b-gray-600 md:basis-3/4 md:px-3">
+                <p className="text-md text-gray-700 mb-5">
+                  Develop APIs for COVID-19 Contact Tracing (ACT) application
+                </p>
+
+                <p className="text-md text-gray-700 mb-2">Skills:</p>
+                <ul className="list-disc list-inside">
+                  <li>ASP.NET Core</li>
+                  <li>C#</li>
+                  <li>EntityFramework Core</li>
+                  <li>Sql Server</li>
+                  <li>Azure App Services</li>
+                  <li>Azure Functions (C#)</li>
+                  <li>Cloud: Azure App Services & Azure DevOps</li>
                 </ul>
               </div>
             </div>
@@ -214,17 +233,7 @@ export default function Home() {
           {/* Job 3 */}
           <section>
             <div>
-              <h3>Full Stack Developer (Contract and Full-Time)</h3>
-              <p>PWC</p>
-              <p>Aug 20 - Sep 21</p>
-            </div>
-            <div>
               <ul>
-                <li>
-                  Develop and build out two APIs for the Automated Contact
-                  Tracing (ACT) application using ASP.NET Core, C#,
-                  EntityFramework Core, and Sql Server
-                </li>
                 <li>
                   Implement new data import features using Azure Functions (C#)
                   primarily used for bulk-importing of large sets of contact
