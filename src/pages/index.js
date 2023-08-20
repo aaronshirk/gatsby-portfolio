@@ -116,7 +116,7 @@ export default function Home() {
       {/* ***  WORK EXPERIENCE  *** */}
       <section>
         <div>
-          <h2 className="text-xl pt-2 text-left md:text-center">
+          <h2 className="text-3xl pt-2 text-left md:text-center">
             Work Experience
           </h2>
           <p className="text-md py-3 text-gray-700 text-left md:text-center">
@@ -231,7 +231,6 @@ export default function Home() {
           </section>
 
           {/* Job 4 */}
-
           <section>
             <div className="my-8 flex flex-col md:flex-row md:justify-center">
               <div className="pb-5 md:basis-1/4 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
@@ -268,18 +267,30 @@ export default function Home() {
       {/* ***  EDUCATION & CERTIFICATIONS *** */}
       <section>
         <div>
-          <h2>Education</h2>
+          <h2 className="mb-6 text-3xl pt-2 text-left md:text-center">
+            Education
+          </h2>
 
-          <section>
-            <h3>University of Colorado</h3>
-            <p>MS - Space Operations Engineering 1998</p>
-            <p>GPA: 4.00</p>
+          <section className="mb-6">
+            <div>
+              <h3 className="text-lg leading-6 font-semibold">
+                University of Colorado
+              </h3>
+              <p className="italic leading-6 text-md text-gray-700">
+                MS - Space Operations Engineering
+              </p>
+              <p className="text-md leading-6 text-gray-700">GPA: 4.00</p>
+            </div>
           </section>
 
-          <section>
-            <h3>The Ohio State University</h3>
-            <p>BS - Computer Information Science and Engineering 1998</p>
-            <p>GPA: 3.89</p>
+          <section className="mb-6">
+            <h3 className="text-lg leading-6 font-semibold">
+              The Ohio State University
+            </h3>
+            <p className="italic leading-6 text-md text-gray-700">
+              BS - Computer Information Science and Engineering
+            </p>
+            <p className="text-md leading-6 text-gray-700">GPA: 3.89</p>
           </section>
         </div>
       </section>
