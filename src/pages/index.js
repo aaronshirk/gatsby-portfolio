@@ -230,50 +230,36 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Job 3 */}
-          <section>
-            <div>
-              <ul>
-                <li>
-                  Implement new data import features using Azure Functions (C#)
-                  primarily used for bulk-importing of large sets of contact
-                  tracing user and device data into the ACT application database
-                </li>
-                <li>
-                  Build new API and Progressive Web App (PWA) UI for processing
-                  user checkin status; Technologies used include Angular,
-                  ASP.NET Core, EF Core, Sql Server
-                </li>
-              </ul>
-            </div>
-          </section>
-
           {/* Job 4 */}
+
           <section>
-            <div>
-              <h3>Software Developer</h3>
-              <p>JMT Technology Group</p>
-              <p>Sep 19 - Aug 20</p>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  Implement new features for JMT’s core and extensible outdoor
-                  licensing and registration platform with Angular 7,
-                  Typescript, .Net Framework, C# and SQL Server for the DB
-                  backend
-                </li>
-                <li>
-                  Build out multiple State licensing and registration websites
-                  by extending the core platform with State specific
-                  requirements, features and enhancements
-                </li>
-                <li>
-                  Develop and promote high-quality, scalable and secure State
-                  websites with modern languages, web frameworks, and tooling
-                  within fast-paced Agile teams under tight production deadlines
-                </li>
-              </ul>
+            <div className="my-8 flex flex-col md:flex-row md:justify-center">
+              <div className="pb-5 md:basis-1/4 md:px-3 md:border-b md:border-dashed md:border-b-gray-600">
+                <h3 className="text-lg leading-6 font-semibold">
+                  Software Developer
+                </h3>
+                <p className="italic leading-6 text-md text-gray-700">
+                  JMT Technology Group
+                </p>
+                <p className="text-md leading-6 text-gray-700">
+                  Sep 19 - Aug 20
+                </p>
+              </div>
+              <div className="pb-5 border-b border-dashed border-b-gray-600 md:basis-3/4 md:px-3">
+                <p className="text-md text-gray-700 mb-5">
+                  Implement new features for JMT’s Outdoor Licensing and
+                  Registration platform.
+                </p>
+
+                <p className="text-md text-gray-700 mb-2">Skills:</p>
+                <ul className="list-disc list-inside">
+                  <li>Angular 7</li>
+                  <li>Typescript</li>
+                  <li>C#</li>
+                  <li>.Net Framework</li>
+                  <li>Sql Server</li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
