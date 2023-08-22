@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { StaticImage } from "gatsby-plugin-image";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const handleClick = () => setDarkMode(!darkMode);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -17,10 +19,17 @@ export default function Home() {
             </h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
-                />
+                {darkMode ? (
+                  <BsFillSunFill
+                    onClick={handleClick}
+                    className="cursor-pointer text-2xl dark:text-gray-300"
+                  />
+                ) : (
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl"
+                  />
+                )}
               </li>
               <li>
                 <a
