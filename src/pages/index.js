@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { StaticImage } from "gatsby-plugin-image";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { graphql } from "gatsby";
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log(data);
   const [darkMode, setDarkMode] = useState(false);
 
   const handleClick = () => setDarkMode(!darkMode);
@@ -34,7 +36,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-teal-600 text-white px-4 py-2 rounded-lg ml-4 md:ml-6 lg:ml-8 dark:gb-teal-500"
-                  href="#"
+                  href="./shirk_resume_006.3.pdf"
                 >
                   Resume
                 </a>
@@ -64,6 +66,7 @@ export default function Home() {
             width={200}
             height={200}
             className="relative rounded-full mx-auto mt-6"
+            alt="Profile Picture"
           />
         </section>
 
@@ -329,3 +332,15 @@ export default function Home() {
     </div>
   );
 }
+
+export const resumeQuery = graphql`
+  query {
+    allFile {
+      nodes {
+        name
+        sourceInstanceName
+        relativePath
+      }
+    }
+  }
+`;

@@ -32,5 +32,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "resume",
+        path: `${__dirname}/resume`,
+      },
+    },
   ],
 };
