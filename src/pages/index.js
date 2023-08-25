@@ -5,9 +5,10 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { graphql } from "gatsby";
 
 export default function Home({ data }) {
-  console.log(data);
   const [darkMode, setDarkMode] = useState(false);
-
+  const { publicURL } = data.allFile.nodes.find(
+    (n) => n.sourceInstanceName === "resume"
+  );
   const handleClick = () => setDarkMode(!darkMode);
 
   return (
@@ -36,7 +37,9 @@ export default function Home({ data }) {
               <li>
                 <a
                   className="bg-teal-600 text-white px-4 py-2 rounded-lg ml-4 md:ml-6 lg:ml-8 dark:gb-teal-500"
-                  href="./shirk_resume_006.3.pdf"
+                  href={publicURL}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Resume
                 </a>
@@ -57,8 +60,20 @@ export default function Home({ data }) {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-stone-700 dark:text-stone-400">
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <a
+              href="https://www.linkedin.com/in/aaronshirk/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin />
+            </a>
+            <a
+              href="https://github.com/aaronshirk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub />
+            </a>
           </div>
           <StaticImage
             src="../images/Profile_Pic.jpg"
@@ -101,6 +116,7 @@ export default function Home({ data }) {
                   className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 hover:pointer"
                   href="https://github.com/aaronshirk/android-app-market/blob/main/notebook.ipynb"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   View
                 </a>
@@ -125,6 +141,7 @@ export default function Home({ data }) {
                   className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600"
                   href="https://github.com/aaronshirk/android-app-market/blob/main/notebook.ipynb"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   View
                 </a>
@@ -333,13 +350,16 @@ export default function Home({ data }) {
   );
 }
 
-export const resumeQuery = graphql`
+export const query = graphql`
   query {
-    allFile {
+    allFile(
+      filter: { extension: { eq: "pdf" }, sourceInstanceName: { eq: "resume" } }
+    ) {
       nodes {
         name
         sourceInstanceName
         relativePath
+        publicURL
       }
     }
   }
