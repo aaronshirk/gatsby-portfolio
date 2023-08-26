@@ -1,0 +1,65 @@
+{
+  "employment": {
+    "title": "Work Experience",
+    "linkedin_link_href": "https://www.linkedin.com/in/aaronshirk/",
+    "linkedin_link_text": "LinkedIn",
+    "linkedin_link_alt": "Link to my LinkedIn profile",
+    "jobs": [
+      {
+        "title": "Senior Analytics Engineer",
+        "company": "Premier Inc.",
+        "employ_dates": "Apr 22 - Present",
+        "job_description": "Build data analytics reports, data pipelines",
+        "details": {
+          "details_tag": "Skills:",
+          "bullets": [
+            "React.js",
+            "Typescript",
+            "PostgreSQL",
+            "Apache Airflow",
+            "Software Development",
+            "SQL",
+            "Python",
+            "Pandas"
+          ]
+        }
+      },
+      {
+        "title": "Senior Software Developer",
+        "company": "North Wind Group",
+        "employ_dates": "Oct 21 - Apr 22",
+        "job_description": "Worked as lead software developer helping to establish modern software development practices",
+        "details": {
+          "details_tag": "Responsibilities:",
+          "bullets": [
+            "Dev stack: ReactJS, ASP.NET Core, Sql Server, git/github",
+            "Cloud: Azure App Services & Azure DevOps",
+            "Teach and promote modern application development",
+            "Maintain existing corporate applications",
+            "Establish and train standard development practices (Agile)",
+            "Maintain corporate legacy applications"
+          ]
+        }
+      },
+      {
+        "title": "Senior Analytics Engineer",
+        "company": "Premier Inc.",
+        "employ_dates": "",
+        "job_description": "Build data analytics reports, data pipelines",
+        "details": {
+          "details_tag": "Skills:",
+          "bullets": [
+            "React.js",
+            "Typescript",
+            "PostgreSQL",
+            "Apache Airflow",
+            "Software Development",
+            "SQL",
+            "Python",
+            "Pandas"
+          ]
+        }
+      }
+    ]
+  }
+}

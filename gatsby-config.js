@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-json",
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -32,11 +33,18 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "resume",
+    //     path: `${__dirname}/src/data/resume`,
+    //   },
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "resume",
-        path: `${__dirname}/resume`,
+        name: "data",
+        path: `${__dirname}/src/data`,
       },
     },
   ],

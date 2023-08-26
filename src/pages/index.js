@@ -11,7 +11,7 @@ import Education from "../components/education";
 export default function Home({ data }) {
   const [darkMode, setDarkMode] = useState(false);
   const { publicURL } = data.allFile.nodes.find(
-    (n) => n.sourceInstanceName === "resume"
+    (n) => n.sourceInstanceName === "data"
   );
   const handleClick = () => setDarkMode(!darkMode);
 
@@ -104,9 +104,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allFile(
-      filter: { extension: { eq: "pdf" }, sourceInstanceName: { eq: "resume" } }
-    ) {
+    allFile(filter: { name: { regex: "/shirk_resume_.*/" } }) {
       nodes {
         name
         sourceInstanceName
