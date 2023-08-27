@@ -32,7 +32,7 @@
         "details": {
           "details_tag": "Responsibilities:",
           "bullets": [
-            "Dev stack: ReactJS, ASP.NET Core, Sql Server, git/github",
+            "Dev stack: ReactJS, ASP.NET Core, Sql Server, Git/Github",
             "Cloud: Azure App Services & Azure DevOps",
             "Teach and promote modern application development",
             "Maintain existing corporate applications",
@@ -42,21 +42,36 @@
         }
       },
       {
-        "title": "Senior Analytics Engineer",
-        "company": "Premier Inc.",
-        "employ_dates": "",
-        "job_description": "Build data analytics reports, data pipelines",
+        "title": "Full Stack Developer (Contract and Full-Time)",
+        "company": "PWC",
+        "employ_dates": "Aug 20 - Sep 21",
+        "job_description": "Develop APIs for COVID-19 Contact Tracing (ACT) application",
         "details": {
           "details_tag": "Skills:",
           "bullets": [
-            "React.js",
+            "ASP.NET Core",
+            "C#",
+            "EntityFramework Core",
+            "Sql Server",
+            "Azure App Services",
+            "Azure Functions (C#)",
+            "Cloud: Azure App Services & Azure DevOps"
+          ]
+        }
+      },
+      {
+        "title": "Software Developer",
+        "company": "JMT Technology Group",
+        "employ_dates": "Sep 19 - Aug 20",
+        "job_description": "Implement new features for JMT’s Outdoor Licensing and Registration platform",
+        "details": {
+          "details_tag": "Skills:",
+          "bullets": [
+            "Angular 7",
             "Typescript",
-            "PostgreSQL",
-            "Apache Airflow",
-            "Software Development",
-            "SQL",
-            "Python",
-            "Pandas"
+            "C#",
+            ".Net Framework",
+            "Sql Server"
           ]
         }
       }
