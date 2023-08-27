@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 export default function WorkHistory() {
   const { dataJson } = useStaticQuery(graphql`
-    query {
+    query work {
       dataJson {
         employment {
           title

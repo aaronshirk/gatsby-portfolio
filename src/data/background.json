@@ -1,4 +1,21 @@
 {
+  "education": {
+    "title": "Education",
+    "programs": [
+      {
+        "type": "university",
+        "institution": "University of Colorado",
+        "program_title": "MS - Space Operations Engineering",
+        "grade": "GPA: 4.00"
+      },
+      {
+        "type": "university",
+        "institution": "The Ohio State University",
+        "program_title": "BS - Computer Information Science and Engineering",
+        "grade": "GPA: 3.89"
+      }
+    ]
+  },
   "employment": {
     "title": "Work Experience",
     "linkedin_link_href": "https://www.linkedin.com/in/aaronshirk/",
