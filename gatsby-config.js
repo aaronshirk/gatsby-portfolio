@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-json",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

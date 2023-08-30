@@ -93,5 +93,26 @@
         }
       }
     ]
+  },
+  "portfolio": {
+    "title": "Featured Projects",
+    "projects": [
+      {
+        "image": "./android-apps-ratings.jpg",
+        "image_alt": "Android App Project Image",
+        "title": "The Android App Market on Google Play (Jupyter Notebook)",
+        "subtitle": "Comprehensive analysis of the Android app market; Source: Google Play",
+        "github_repo_url": "https://github.com/aaronshirk/android-app-market/blob/main/notebook.ipynb",
+        "cta": "View"
+      },
+      {
+        "image": "./netflix-movies.jpg",
+        "image_alt": "Netflix Movies Project Image",
+        "title": "Investigating Netflix Movies and Guest Stars in The Office",
+        "subtitle": "Is it true that movie duration has steadily decreased over the last few years?",
+        "github_repo_url": "https://github.com/aaronshirk/android-app-market/blob/main/notebook.ipynb",
+        "cta": "View"
+      }
+    ]
   }
 }
