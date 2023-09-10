@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
     "gatsby-transformer-json",
     "gatsby-transformer-sharp",
     {
@@ -34,18 +35,18 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "resume",
-    //     path: `${__dirname}/src/data/resume`,
-    //   },
-    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "data",
         path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "zapa",
+        path: `${__dirname}/zapa`,
       },
     },
   ],

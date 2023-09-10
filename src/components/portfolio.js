@@ -1,7 +1,37 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { useStaticQuery, graphql } from "gatsby";
+import Project from "./project";
 
 export default function Portfolio() {
+  const {
+    allMdx: { nodes },
+  } = useStaticQuery(graphql`
+    query portfolio {
+      allMdx {
+        nodes {
+          frontmatter {
+            cta
+            github_repo_url
+            image_alt
+            subtitle
+            title
+            image {
+              childImageSharp {
+                gatsbyImageData
+              }
+              childrenImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+          id
+        }
+      }
+    }
+  `);
+
+  console.log(nodes);
+
   return (
     <section>
       <div>
@@ -14,14 +44,19 @@ export default function Portfolio() {
         </p>
 
         <div className="md:flex gap-10">
+          {nodes &&
+            nodes.length > 0 &&
+            nodes.map((node, index) => (
+              <Project key={node.id} projectData={node.frontmatter} />
+            ))}
           {/* Project 1 */}
           <div className="text-center shadow-xl rounded-xl my-10 w-96 h-96 dark:bg-slate-700 overflow-hidden">
-            <StaticImage
+            {/* <StaticImage
               src="../images/andoid-apps-ratings.jpg"
               alt="Android app rating distribution"
               height={200}
               aspectRatio={2.44}
-            />
+            /> */}
             <h3 className="text-lg font-medium mt-6 mb-3 mx-2 md:mx-4 dark:text-white">
               The Android App Market on Google Play (Jupyter Notebook)
             </h3>
@@ -41,12 +76,12 @@ export default function Portfolio() {
 
           {/* Project 2 */}
           <div className="text-center shadow-xl rounded-xl my-10 w-96 h-96 dark:bg-slate-700 overflow-hidden">
-            <StaticImage
+            {/* <StaticImage
               src="../images/netflix-movies.jpg"
               alt="Investigating netflix movie length"
               height={200}
               aspectRatio={2.44}
-            />
+            /> */}
             <h3 className="text-lg font-medium mt-6 mb-3 mx-2 md:mx-4 dark:text-white">
               Investigating Netflix Movies and Guest Stars in The Office
             </h3>
