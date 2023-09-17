@@ -45,8 +45,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "zapa",
-        path: `${__dirname}/zapa`,
+        name: "portfolio",
+        path: `${__dirname}/portfolio`,
       },
     },
   ],
